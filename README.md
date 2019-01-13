@@ -9,7 +9,7 @@
 <br/>
 
 Use the [asdf][asdf] version manager with [fish shell][fish-shell] managed by
-[Oh my Fish!][omf-link]!
+[Oh my Fish!][omf-link]
 
 ## Installation
 
@@ -17,9 +17,20 @@ Use the [asdf][asdf] version manager with [fish shell][fish-shell] managed by
 omf install asdf
 ```
 
+## Setup (optional in some cases)
+
+No setup is necessary if asdf was [manually installed][asdf-install] in
+`$HOME/.asdf`.
+
+Otherwise, you need to set the `ASDF_DIR` variable in `$OMF_CONFIG/init.fish`:
+
+```fish
+set -g ASDF_DIR /path/to/asdf
+```
+
 ## Usage
 
-TBA
+Please refer to https://github.com/asdf-vm/asdf#usage.
 
 # License
 
@@ -32,6 +43,8 @@ TBA
 [omf-link]:      https://github.com/oh-my-fish/oh-my-fish
 [fish-shell]:    https://fishshell.com
 [asdf]:          https://github.com/asdf-vm/asdf
+[asdf-install]:  https://github.com/asdf-vm/asdf#installation
+[homebrew]:      https://brew.sh
 
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [version-badge]: https://img.shields.io/badge/fish-v2.2.0+-007EC7.svg?style=flat-square
